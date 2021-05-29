@@ -9,7 +9,7 @@ app.set("views", process.cwd() + "/src/views");
 
 app.use(morgan("dev"));
 app.use("/assets", express.static("assets"));
-app.use("/images", express.static("images"));
+app.use("/public", express.static("public"));
 
 app.get("/", (request, response) => response.render("base"));
 
