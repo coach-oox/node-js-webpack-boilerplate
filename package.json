@@ -1,16 +1,20 @@
 {
     "name": "js-webpack-boilerplate",
     "version": "1.0.0",
-    "description": "Setting up Node.js, Express, WebPack, ESLint, Prettier and Babel.",
-    "author": "coach-oox",
+    "description": "Setting up Node.js, Express, MongoDB (Mongoose), WebPack, ESLint, Prettier and Babel.",
+    "author": {
+        "name": "Coach OOX",
+        "email": "coachmsoox@gmail.com",
+        "url": "https://github.com/coachoox"
+    },
     "license": "MIT",
-    "homepage": "https://github.com/coach-oox/node-js-webpack-boilerplate#readme",
+    "homepage": "https://github.com/coachoox/node-js-webpack-boilerplate#readme",
     "repository": {
         "type": "git",
-        "url": "git+https://github.com/coach-oox/node-js-webpack-boilerplate.git"
+        "url": "git+https://github.com/coachoox/node-js-webpack-boilerplate.git"
     },
     "bugs": {
-        "url": "https://github.com/coach-oox/node-js-webpack-boilerplate/issues"
+        "url": "https://github.com/coachoox/node-js-webpack-boilerplate/issues"
     },
     "scripts": {
         "build": "npm run build:server && npm run build:assets",
@@ -22,7 +26,14 @@
     },
     "dependencies": {
         "express": "4.17.1",
-        "pug": "3.0.2"
+        "express-flash": "0.0.2",
+        "express-session": "1.17.1",
+        "dotenv": "8.2.0",
+        "pug": "3.0.2",
+        "connect-mongo": "4.4.1",
+        "mongoose": "5.12.5",
+        "morgan": "1.10.0",
+        "bcrypt": "5.0.1"
     },
     "devDependencies": {
         "@babel/cli": "7.14.3",
@@ -36,7 +47,6 @@
         "eslint-config-prettier": "8.3.0",
         "eslint-plugin-prettier": "3.4.0",
         "mini-css-extract-plugin": "1.6.0",
-        "morgan": "1.10.0",
         "node-sass": "6.0.0",
         "nodemon": "2.0.7",
         "prettier": "2.3.0",

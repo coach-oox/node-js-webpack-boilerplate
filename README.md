@@ -12,6 +12,12 @@
 ## Dependencies
 
 - `express`
+- `express-flash`
+- `express-session`
+- `dotenv`
+- `connect-mongo`
+- `mongoose`
+- `bcrypt`
 - `pug`
 - `morgan`
 - `nodemon`
